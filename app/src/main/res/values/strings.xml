@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PrintReceipt</string>
+    <string name="printing">Printing...</string>
+    <string name="total">TOTAL</string>
+    <string name="remove_discount">Remove Discount</string>
+    <string name="_20_senior_pwd_discount">20% Senior/PWD Discount</string>
+    <string name="add_discount">Add Discount</string>
+    <string name="print">PRINT</string>
+</resources>

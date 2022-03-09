@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <ir.beigirad.zigzagview.ZigzagView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:zigzagBackgroundColor="@color/white"
+        app:zigzagElevation="@dimen/_8sdp"
+        app:zigzagHeight="@dimen/_5sdp"
+        app:zigzagShadowAlpha="0.9"
+        app:zigzagSides="top|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="RECEIPT SUMMARY"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_16sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="DATE:"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:gravity="start"
+                        android:text="Mar-10-2022"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_16sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="FROM:"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:gravity="start"
+                        android:text="Batasan"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="TIME:"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:gravity="start"
+                        android:text="5:00pm"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="TO:"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:gravity="start"
+                        android:text="SM Fairview"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/dotted"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="First 4km"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="₱10.00"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="₱1.50/km x 3km"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="₱4.50"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="@string/add_discount"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                app:backgroundTint="#02AF40"
+                app:cornerRadius="@dimen/_4sdp"/>
+
+            <LinearLayout
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/_20_senior_pwd_discount"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="-₱2.90"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="#DF4859"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/removeDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="@string/remove_discount"
+                android:textSize="@dimen/_10ssp"
+                android:textAllCaps="false"
+                app:backgroundTint="#DF4859"
+                app:cornerRadius="@dimen/_4sdp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/dotted"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_12sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/total"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="₱14.50"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ir.beigirad.zigzagview.ZigzagView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/print"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="@string/print"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="?attr/colorPrimary"
+        app:cornerRadius="@dimen/_8sdp"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/ic_print"
+        app:iconGravity="textStart"
+        app:iconTint="?attr/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/container"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
